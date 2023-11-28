@@ -2,3 +2,43 @@
     height: 100px;
     background-color: black;
 }
+
+#settingsIcon   {
+    width: 70px;
+}
+
+#settingsButton {
+    display: flex;
+    margin-left: auto;
+    padding: 10px;
+}
+
+#settingsButton:hover   {
+    cursor: pointer;
+}
+
+#settingsMenu   {
+    display: none;
+    position: absolute;
+    border: 1px solid gray;
+    background-color: black;
+    height: 200px;
+    width: 200px;
+    right: 3%;
+    top: 9%;
+}
+
+.darkModeToggle   {
+    transition: 500ms;
+    background-color: black;
+    color: white;
+}
+
+button {
+	background: none;
+	color: inherit;
+	border: none;
+	padding: 0;
+	font: inherit;
+	outline: inherit;
+}
