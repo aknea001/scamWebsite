@@ -1,9 +1,11 @@
 const settingsBtn = document.getElementById("settingsButton")
 const settingsMenu = document.getElementById("settingsMenu")
-const header = document.getElementById("header")
+const bigger = document.getElementById("biggerButton")
+const smaller = document.getElementById("smallerButton")
 
 const darkMode = document.getElementById("darkMode")
 const body = document.body
+const p = document.querySelectorAll("p")
 
 let menuClosed = true
 
@@ -20,5 +22,11 @@ settingsBtn.addEventListener("click", function () {
 
 darkMode.addEventListener("click", function() {
     body.classList.toggle("darkModeToggle")
-    header.classList.toggle("darkModeToggle")
+    if (body.classList.contains("darkModeToggle")) {
+        body.style.transition = "500ms"
+    }
+})
+
+bigger.addEventListener("click", function() {
+    p.style.fontsize = "10rem"
 })
